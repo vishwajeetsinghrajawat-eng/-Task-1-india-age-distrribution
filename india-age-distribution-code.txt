@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+
+age_groups = ['0-14 years', '15-64 years', '65+ years']
+percentages = [25.68, 67.50, 6.83]
+
+plt.figure(figsize=(8, 5))
+plt.bar(age_groups, percentages, color=['skyblue', 'orange', 'green'])
+plt.xlabel('Age Groups')
+plt.ylabel('Population Percentage (%)')
+plt.title("India's Population Distribution by Age in 2022")
+plt.ylim(0, 80)
+plt.grid(axis='y', linestyle='--', alpha=0.7)
+plt.tight_layout()
+plt.show()
